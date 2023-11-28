@@ -1,1 +1,1 @@
-After running the program, a .ics file containing the calendar details should appear her
+After running the program, an .ics file containing the calendar details should appear here
