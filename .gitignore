@@ -7,3 +7,5 @@
 out/
 *.class
 *.iml
+output/output.txt
+output/output.ics
