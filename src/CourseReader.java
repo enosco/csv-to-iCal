@@ -81,7 +81,14 @@ public class CourseReader {
         while(!csv.equals("q")){ //User input loop
             if(courseCatalog.containsKey(csv)){
                 foundCourse = courseCatalog.get(csv);
-                requestedCourses.add(createCourse(foundCourse));
+                System.out.println("Found course: " + foundCourse);
+                System.out.println("Add to calendar? (y\\n)");
+                if(userIn.next().equals("y")) {
+                    requestedCourses.add(createCourse(foundCourse));
+                    System.out.println("Course added.");
+                }else {
+                    System.out.println("Canceled.");
+                }
             }
             else {
                 System.out.println("No Course Found for: " + csv);

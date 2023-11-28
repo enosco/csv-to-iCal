@@ -60,7 +60,7 @@ public class iCalCreator {
             //writer.printf("DURATION:PT%sH%n", c.getDuration());
             writer.printf("LOCATION:%s %s%n", c.getBuilding(), c.getRoomNum());
 
-            writer.printf("RRULE:FREQ=WEEKLY");
+            writer.printf("RRULE:FREQ=WEEKLY%n");
             writer.printf("END:VEVENT%n");
         }
     }
