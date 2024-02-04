@@ -17,7 +17,7 @@ public class iCalCreator {
         this.courses.addAll(courses);*/
 
         System.out.println("Creating output file...");
-        file = new File("output/output.txt");
+        file = new File("output/output.ics");
         printOutputFileStatus();
         writer = new PrintWriter(new FileWriter(file));
 
